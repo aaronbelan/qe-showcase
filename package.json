@@ -1,7 +1,7 @@
 {
   "name": "gg-qe-showcase",
   "version": "1.0.0",
-  "description": "Tooling for QE showcase: Cypress, k6, and Newman included for candidate convenience.",
+  "description": "Tooling for QE showcase: Cypress, K6, and Newman included for candidate convenience.",
   "private": true,
   "scripts": {
     "cypress:open": "cypress open",
