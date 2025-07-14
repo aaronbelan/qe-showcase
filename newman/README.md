@@ -1,7 +1,7 @@
-# Postman Task: API Flow
+# API Testing Task
 
 **Goal:**  
-Create a Postman collection that exercises the `/posts` endpoint on [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com).
+Test the `/posts` endpoint on [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com) using any API testing approach.
 
 **Steps to cover:**
 
@@ -10,18 +10,26 @@ Create a Postman collection that exercises the `/posts` endpoint on [jsonplaceho
 3. PUT `/posts/{id}` (update a post)
 4. DELETE `/posts/{id}` (delete a post)
 
+**Choose your approach:**
+
+- Postman collection + environment
+- Newman script
+- Raw HTTP requests with assertions
+- Any other API testing tool/method you prefer
+
 **Requirements:**
 
-- Use variables for base URL and IDs
-- Add at least one test script per request (e.g., check status, response shape)
-- Include an environment file (can be simple)
-- Organize your collection logically
+- Test all 4 HTTP methods above
+- Include meaningful assertions (status codes, response structure, etc.)
+- Use variables/dynamic data where appropriate
+- Document your approach in comments or README
 
-**Estimated time:** 2–4 hours
+**Estimated time:** Less than 1 hour
 
 **Resources:**
 
 - [Postman Docs](https://learning.postman.com/docs/)
+- [Newman Docs](https://learning.postman.com/docs/running-collections/using-newman-cli/)
 - [JSONPlaceholder Guide](https://jsonplaceholder.typicode.com/guide/)
 
 **Have fun!**
