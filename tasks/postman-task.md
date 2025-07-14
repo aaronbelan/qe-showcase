@@ -17,7 +17,7 @@ Create a Postman collection that exercises the `/posts` endpoint on [jsonplaceho
 - Include an environment file (can be simple)
 - Organize your collection logically
 
-**Estimated time:** 2–4 hours
+**Estimated time:** Less than 1 hour
 
 **Resources:**
 

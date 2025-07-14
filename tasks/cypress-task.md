@@ -20,7 +20,7 @@ Write a Cypress test that covers a basic purchase flow on [saucedemo.com](https:
 - Add comments to explain your thinking
 - You don’t need to cover every edge case
 
-**Estimated time:** 2–4 hours
+**Estimated time:** Less than 1 hour
 
 **Resources:**
 

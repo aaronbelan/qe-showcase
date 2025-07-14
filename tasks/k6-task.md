@@ -16,7 +16,7 @@ Write a k6 script to load test the `/posts` endpoint on [jsonplaceholder.typicod
 - Add comments to explain your choices
 - You don’t need to simulate high load — focus on structure
 
-**Estimated time:** 2–4 hours
+**Estimated time:** Less than 1 hour
 
 **Resources:**
 
