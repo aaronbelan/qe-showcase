@@ -28,7 +28,7 @@ Pick **one** of the following paths (see `/tasks/` for details):
 
 1. Fork this repo.
 2. Pick a task from `/tasks/` and follow the instructions.
-3. Work for 2–4 hours (max).
+3. Don't spend more than 1-2 hours.
 4. Open a PR with your solution. Use the PR template to tell us about your approach.
 
 We’ll leave comments and may ask questions — we’re interested in your reasoning and how you respond, not just what you build.
