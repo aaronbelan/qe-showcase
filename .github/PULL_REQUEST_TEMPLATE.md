@@ -18,4 +18,4 @@ _List anything you’d refactor, add, or do differently._
 
 ---
 
-Thank you for sharing your work and process with us! 
+Thank you for sharing your work and process with us!
