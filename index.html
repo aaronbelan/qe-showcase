@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Test Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav data-qa-id="main-navigation">
+            <div class="nav-brand">
+                <h1 data-qa-id="app-title">Cypress Test App</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-qa-id="nav-home">Home</a></li>
+                <li><a href="#products" data-qa-id="nav-products">Products</a></li>
+                <li><a href="#contact" data-qa-id="nav-contact">Contact</a></li>
+            </ul>
+            <button data-qa-id="login-button" class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" data-qa-id="home-section">
+            <h2 data-qa-id="welcome-heading">Welcome to Our Store</h2>
+            <p data-qa-id="welcome-message">This is a sample application for Cypress testing practice.</p>
+            <button data-qa-id="get-started-button" class="cta-button">Get Started</button>
+        </section>
+
+        <section id="products" data-qa-id="products-section" class="hidden">
+            <h2 data-qa-id="products-heading">Our Products</h2>
+            <div class="product-grid" data-qa-id="product-grid">
+                <div class="product-card" data-qa-id="product-1">
+                    <img src="https://via.placeholder.com/200x150" alt="Product 1" data-qa-id="product-1-image">
+                    <h3 data-qa-id="product-1-name">Laptop</h3>
+                    <p data-qa-id="product-1-price">$999.99</p>
+                    <button data-qa-id="add-to-cart-1" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-qa-id="product-2">
+                    <img src="https://via.placeholder.com/200x150" alt="Product 2" data-qa-id="product-2-image">
+                    <h3 data-qa-id="product-2-name">Smartphone</h3>
+                    <p data-qa-id="product-2-price">$699.99</p>
+                    <button data-qa-id="add-to-cart-2" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-qa-id="product-3">
+                    <img src="https://via.placeholder.com/200x150" alt="Product 3" data-qa-id="product-3-image">
+                    <h3 data-qa-id="product-3-name">Headphones</h3>
+                    <p data-qa-id="product-3-price">$199.99</p>
+                    <button data-qa-id="add-to-cart-3" class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="cart-summary" data-qa-id="cart-summary">
+                <h3 data-qa-id="cart-title">Shopping Cart</h3>
+                <div data-qa-id="cart-items"></div>
+                <div data-qa-id="cart-total">Total: $0.00</div>
+                <button data-qa-id="checkout-button" class="checkout-btn" disabled>Checkout</button>
+            </div>
+        </section>
+
+        <section id="contact" data-qa-id="contact-section" class="hidden">
+            <h2 data-qa-id="contact-heading">Contact Us</h2>
+            <form data-qa-id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name" data-qa-id="name-label">Name:</label>
+                    <input type="text" id="name" name="name" data-qa-id="name-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-qa-id="email-label">Email:</label>
+                    <input type="email" id="email" name="email" data-qa-id="email-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" data-qa-id="subject-label">Subject:</label>
+                    <select id="subject" name="subject" data-qa-id="subject-select" required>
+                        <option value="">Select a subject</option>
+                        <option value="general" data-qa-id="subject-general">General Inquiry</option>
+                        <option value="support" data-qa-id="subject-support">Support</option>
+                        <option value="billing" data-qa-id="subject-billing">Billing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-qa-id="message-label">Message:</label>
+                    <textarea id="message" name="message" data-qa-id="message-textarea" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label data-qa-id="newsletter-label">
+                        <input type="checkbox" name="newsletter" data-qa-id="newsletter-checkbox">
+                        Subscribe to newsletter
+                    </label>
+                </div>
+                <button type="submit" data-qa-id="submit-button" class="submit-btn">Send Message</button>
+            </form>
+            <div data-qa-id="form-success" class="success-message hidden">
+                Thank you for your message! We'll get back to you soon.
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Login -->
+    <div id="login-modal" data-qa-id="login-modal" class="modal hidden">
+        <div class="modal-content" data-qa-id="modal-content">
+            <span class="close" data-qa-id="modal-close">&times;</span>
+            <h2 data-qa-id="login-heading">Login</h2>
+            <form data-qa-id="login-form">
+                <div class="form-group">
+                    <label for="username" data-qa-id="username-label">Username:</label>
+                    <input type="text" id="username" name="username" data-qa-id="username-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" data-qa-id="password-label">Password:</label>
+                    <input type="password" id="password" name="password" data-qa-id="password-input" required>
+                </div>
+                <button type="submit" data-qa-id="login-submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast notifications -->
+    <div id="toast-container" data-qa-id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
